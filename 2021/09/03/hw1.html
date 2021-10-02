@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Homework 1 | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Homework 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Math is Fun" />
+<meta property="og:description" content="Math is Fun" />
+<link rel="canonical" href="https://zhoux811.github.io/my_fastai/2021/09/03/hw1.html" />
+<meta property="og:url" content="https://zhoux811.github.io/my_fastai/2021/09/03/hw1.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-03T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-03T00:00:00-05:00","url":"https://zhoux811.github.io/my_fastai/2021/09/03/hw1.html","@type":"BlogPosting","headline":"Homework 1","dateModified":"2021-09-03T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://zhoux811.github.io/my_fastai/2021/09/03/hw1.html"},"description":"Math is Fun","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/my_fastai/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://zhoux811.github.io/my_fastai/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/my_fastai/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/my_fastai/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/my_fastai/about/">About Me</a><a class="page-link" href="/my_fastai/search/">Search</a><a class="page-link" href="/my_fastai/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Homework 1</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-09-03T00:00:00-05:00" itemprop="datePublished">
+        Sep 3, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="hw1-math-is-fun">HW1. Math is Fun</h3>
+<p>Solve 3 problems from the <a href="https://projecteuler.net/archives">Eular Project</a> using Python. Of the 3 problems, one must have been solved by fewer than 25,000 people, 1 fewer than 100,000 people and one fewer than 500,000 people.</p>
+
+<h3 id="problem-10-summation-of-primes-solved-by-330399">Problem 10. Summation of primes (solved by 330,399)</h3>
+<p>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17. 
+Find the sum of all the primes below two million.</p>
+
+<h4 id="approach">Approach</h4>
+<p>If a number is not divided by all prime numbers that are not greater than its square root, then it is a prime number. To calculate the sum of all prime numbers from 2 to 2,000,000, a prime number list can be created and used to judge the next number. If the next number is prime, then add it to the list. Since only singular numbers after 2 can be prime, the step size can be set to 2 during iteration. The sum of all numbers in the prime number list is final answer.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def summation_of_primes(limit):
+    """
+    Use the first three prime numbers to find all prime numbers from 2 to 200,000 
+    and store them in a list, returning the sum of prime numbers in the list.
+    
+    Parameters
+    ----------
+    limit : int
+            The limitation of all prime numbers.
+    prime : list
+            Store all prime numbers.
+    x     : binary int
+            0 or 1 converted from boolean.
+    
+    Returns
+    -------
+    int
+        The summation of all prime numbers from 2 to 200,000.
+        
+    See Also
+    --------
+    math.sqrt: Square root of any number.
+    """
+    prime = [2,3,5]
+    for num in range(7,limit,2):
+        x = 1
+        for p in prime:
+            if(p &gt; math.sqrt(num)+1):
+                break
+            if(num % p == 0):
+                x = 0
+                break
+        if x == 1:
+            prime.append(num)
+    return np.sum(prime)
+</code></pre></div></div>
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; print(summation_of_primes(200000))
+1709600813
+</code></pre></div></div>
+<p>Thus, the sum of all the primes below two million is 1709600813.</p>
+
+<h3 id="problem-45-triangular-pentagonal-and-hexagonal-solved-by-71490">Problem 45. Triangular, pentagonal, and hexagonal (solved by 71,490)</h3>
+<p>Triangle, pentagonal, and hexagonal numbers are generated by the following formulae:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shape</th>
+      <th>Formula</th>
+      <th>Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Triangle</td>
+      <td>T<sub>n</sub>=n(n+1)/2</td>
+      <td>1, 3, 6, 10, 15, …</td>
+    </tr>
+    <tr>
+      <td>Pentagonal</td>
+      <td>P<sub>n</sub>=n(3n−1)/2</td>
+      <td>1, 5, 12, 22, 35, …</td>
+    </tr>
+    <tr>
+      <td>Hexagonal</td>
+      <td>H<sub>n</sub>=n(2n−1)</td>
+      <td>1, 6, 15, 28, 45, …</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>It can be verified that T<sub>285</sub> = P<sub>165</sub> = H<sub>143</sub> = 40755.
+Find the next triangle number that is also pentagonal and hexagonal.</p>
+
+<h4 id="approach-1">Approach</h4>
+<p>First of all, it can be observed that a hexagonal number is a triangular number at an odd position. In fact, for any odd number (2n−1), after substituting it into the triangle number, we get (2n−1)(2n−1+1)/2=n(2n−1) which is a hexagonal number. Therefore, the hexagonal number is a subset of the triangular number. When a number is a hexagonal number, we no longer need to verify whether it is a triangular number. We sequentially generate hexagonal numbers from n=144, and then determine whether the generated number is a pentagonal number, if it is not, then generate the next number, if it is, then return the hexagonal number, which is the answer.</p>
+
+<p>To determine whether a number is a pentagonal number, we find the inverse function of the general term of the pentagonal number, that is, n=((1+24x)<sup>1/2</sup>+1)/6. Only when ((1+24x)<sup>1/2</sup>+1) mod 6 = 0, the number is a pentagonal number.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def tri_penta_hexa(n):
+    """
+    Find the next hexagonal number and determine if it is also a pentagonal number.
+    
+    Parameters
+    ----------
+    n : int
+        The starting hexagonal number.
+    x : binary int
+        0 or 1 converted from boolean.
+    
+    Returns
+    -------
+    int
+        The next triangle number that is also pentagonal and hexagonal.
+           
+    See Also
+    --------
+    math.sqrt: Square root of any number.
+    """
+    x = 1
+    while x==1:
+        h = n*(2*n-1)
+        if (math.sqrt(24*h+1)+1)%6==0:
+            return h
+        else:
+            n += 1
+</code></pre></div></div>
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; print(tri_penta_hexa(144))
+1533776805
+</code></pre></div></div>
+<p>Thus, the next triangle number that is also pentagonal and hexagonal is 1533776805.</p>
+
+<h3 id="problem-75-singular-integer-right-triangles-solved-by-17927">Problem 75. Singular integer right triangles (solved by 17,927)</h3>
+<p>It turns out that 12 cm is the smallest length of wire that can be bent to form an integer sided right angle triangle in exactly one way, but there are many more examples.</p>
+
+<p>12 cm: (3,4,5);<br />
+24 cm: (6,8,10);<br />
+30 cm: (5,12,13);<br />
+36 cm: (9,12,15);<br />
+40 cm: (8,15,17);<br />
+48 cm: (12,16,20)</p>
+
+<p>In contrast, some lengths of wire, like 20 cm, cannot be bent to form an integer sided right angle triangle, and other lengths allow more than one solution to be found; for example, using 120 cm it is possible to form exactly three different integer sided right angle triangles.</p>
+
+<p>120 cm: (30,40,50), (20,48,52), (24,45,51)</p>
+
+<p>Given that L is the length of the wire, for how many values of L ≤ 1,500,000 can exactly one integer sided right angle triangle be formed?</p>
+
+<h4 id="approach-2">Approach</h4>
+<p>According to Euclidean formula, assuming m&gt;n&gt;0, gcd(m,n)=1 and m,n are not all odd numbers, then m,n can form a primitive Pythagorean triple (a,b,c), where a,b,c are mutually prime. a is the long leg, b is the short leg, and c is the hypotenuse, then:</p>
+
+<p>a = m<sup>2</sup>−n<sup>2</sup>, b = 2mn, c = m<sup>2</sup>+n<sup>2</sup></p>
+
+<p>Multiply (a,b,c) by k (k≥1) at the same time, then (ka, kb, kc) is also a Pythagorean triple. The perimeter of the Pythagorean tripe is:</p>
+
+<p>p = ka+kb+kc = k(a+b+c) = 2km(m+n)</p>
+
+<p>Therefore, as long as we get the perimeter of a set of primitive Pythagorean triple numbers, we can get the perimeters of other Pythagorean triple numbers.</p>
+
+<p>According to the question, the maximum perimeter can only be 1.5 million:
+2km(m+n) ≤ 1500000 ⇒ m ≤ (1500000/2k)<sup>1/2</sup> ≤ (1500000/2)<sup>1/2</sup></p>
+
+<p>With the equation above, we can get the m, n values in the range, calculate the perimeter, count the number of times each perimeter appears, and return the number of perimeters that only appear once, which is the answer.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def singular_integer_right_triangles(limit):
+    """
+    Find primitive Pythagorean triple, calculate the perimeter, count the number of times 
+    each perimeter appears, and return the number of perimeters that only appear once.
+    
+    Parameters
+    ----------
+    limit : int
+            The limitation of triangle perimeter.
+    arr   : list
+            Store the perimeters less or equal to the limitation.
+    k     : int
+            Multiply with primitive Pythagorean triple to get all Pythagorean triples.
+    c     : int
+            Count the number of occurrences of each perimeter.
+    
+    Returns
+    -------
+    int
+        Sum of the number of triangle perimeters that only appear once.
+    
+    See Also
+    --------
+    math.sqrt: Square root of any number.
+    math.gcd: Greatest common divisor of the two integers
+    Counter: Container that keeps track of how many times equivalent values are added.
+    """
+    arr = []
+    m_max = int(math.sqrt(limit/2))
+    for m in range(2, m_max+1):
+        for n in range(1, m):
+            if (m + n) % 2 == 1 and math.gcd(m, n) == 1:
+                p = 2*m*(m+n)
+                k = 1
+                while k*p &lt;= limit:
+                    arr.append(k*p)
+                    k += 1
+    c = Counter(arr)
+    return len([x for x in c.values() if x==1])
+</code></pre></div></div>
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; print(singular_integer_right_triangles(1500000))
+161667
+</code></pre></div></div>
+<p>Thus, given that L is the length of the wire, 161667 values of L ≤ 1,500,000 can exactly form one integer sided right angle triangle.</p>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="zhoux811/my_fastai"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/my_fastai/2021/09/03/hw1.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/my_fastai/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/my_fastai/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/my_fastai/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/my_fastai/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/my_fastai/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
