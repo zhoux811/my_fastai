@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Homework 2 | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Homework 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Number theory and a Google recruitment puzzle" />
+<meta property="og:description" content="Number theory and a Google recruitment puzzle" />
+<link rel="canonical" href="https://zhoux811.github.io/my_fastai/2021/09/17/hw2.html" />
+<meta property="og:url" content="https://zhoux811.github.io/my_fastai/2021/09/17/hw2.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-17T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-17T00:00:00-05:00","url":"https://zhoux811.github.io/my_fastai/2021/09/17/hw2.html","@type":"BlogPosting","headline":"Homework 2","dateModified":"2021-09-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://zhoux811.github.io/my_fastai/2021/09/17/hw2.html"},"description":"Number theory and a Google recruitment puzzle","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/my_fastai/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://zhoux811.github.io/my_fastai/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/my_fastai/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/my_fastai/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/my_fastai/about/">About Me</a><a class="page-link" href="/my_fastai/search/">Search</a><a class="page-link" href="/my_fastai/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Homework 2</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-09-17T00:00:00-05:00" itemprop="datePublished">
+        Sep 17, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="hw2-number-theory-and-a-google-recruitment-puzzle">HW2. Number theory and a Google recruitment puzzle</h3>
+<p>Find the first 10-digit prime in the decimal expansion of 17π. To achieve this, three helper functions are created.</p>
+
+<h4 id="required-packages">Required Packages</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sympy as sym
+import math
+</code></pre></div></div>
+
+<h4 id="1-function-to-generate-an-arbitrary-large-expansion-of-a-mathematical-expression">1. Function to generate an arbitrary large expansion of a mathematical expression</h4>
+<p>Generate the decimal expression of a number and return its string form according to the required number of decimal digits. In the function below, the input value in <code class="language-plaintext highlighter-rouge">evalf()</code> is the total number of digits in integer and fractional part.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def num_expansion(num, digit):
+    """
+    Generate the decimal expression of a number and return its string form
+    according to the required number of decimal digits.
+    """
+    return str(num.evalf(digit+len(str(int(math.modf(num)[1])))))
+</code></pre></div></div>
+
+<h4 id="2-function-to-check-if-a-number-is-prime">2. Function to check if a number is prime</h4>
+<p>This function helps to check if a number is prime. Prime number refers to the number of natural numbers greater than 1, except for 1 and the number itself, that cannot be divisible by other natural numbers. All even numbers except 2 are not prime numbers.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def is_prime(num):
+    """
+    Check whether the input number is prime or not.
+    """
+    if num &lt;= 1:
+        return False
+    if num == 2:
+        return True
+    if num % 2 == 0:
+        return False
+    i = 3
+    while i * i &lt;= num:
+        if num % i == 0:
+            return False
+        i += 2
+    return True
+</code></pre></div></div>
+
+<h4 id="3-function-to-generate-sliding-windows-of-a-specified-width-from-a-long-iterable">3. Function to generate sliding windows of a specified width from a long iterable</h4>
+<p>A list is created to store all 10-digit numbers covered in the input decimal part.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def iterable(num):
+    """
+    Generate all 10-digit number contained in the decimal part.
+    Store them in a list and return the list.
+    """
+    num_list = []
+    for i in range(0,len(num)-9):
+        num_list.append(num[i:i+10])
+    return num_list
+</code></pre></div></div>
+
+<h4 id="4-function-to-find-the-first-10-digit-prime-in-the-decimal-expansion">4. Function to find the first 10-digit prime in the decimal expansion</h4>
+<p>This function is the combination of the three helper functions above. We could obtain the first 10-digit prime in the decimal expansion of any numbers expressed by <code class="language-plaintext highlighter-rouge">sympy</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def first_ten_digit_prime(n):
+    """
+    Find the first 10-digit prime number by combining three helper functions.
+    Return the first 10-digit prime of the decimal part.
+    """
+    d = len(str(math.modf(n)[1]))
+    start = 0
+    digit = 100
+    while 1:
+        num = num_expansion(n, digit)[start+d:]
+        for j in iterable(num):
+            if is_prime(int(j)):
+                return int(j)
+        start = digit + d - 8
+        digit *= 2
+</code></pre></div></div>
+<h5 id="output">Output:</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; first_ten_digit_prime(17*sym.pi)
+8649375157
+</code></pre></div></div>
+
+<h4 id="unit-tests">Unit Tests</h4>
+<p>Unit tests are wrote for each of these four functions above.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import unittest
+
+class test_hw2(unittest.TestCase):
+    def test_num_expansion(self):
+        """Test num_expansion()"""
+        self.assertEqual(num_expansion(sym.pi, 10), '3.1415926536')
+        self.assertEqual(num_expansion(17*sym.pi, 10), '53.4070751110')
+        self.assertEqual(num_expansion(sym.exp(1), 10), '2.7182818285')
+    
+    def test_is_prime(self):
+        """Test is_prime()"""
+        self.assertEqual(is_prime(2), True)
+        self.assertEqual(is_prime(1998), False)
+        self.assertEqual(is_prime(7427466391), True)
+    
+    def test_iterable(self):
+        """Test iterable()"""
+        self.assertEqual(iterable('12345678910'), ['1234567891', '2345678910'])
+        self.assertEqual(iterable('141592653590'), ['1415926535', '4159265359', '1592653590'])
+    
+    def test_first_ten_digit_prime(self):
+        """Test first_ten_digit_prime()"""
+        self.assertEqual(first_ten_digit_prime(sym.exp(1)), 7427466391)
+        self.assertEqual(first_ten_digit_prime(sym.pi), 5926535897)
+
+unittest.main(argv = [''], verbosity = 2, exit = False)
+</code></pre></div></div>
+
+<h5 id="output-1">Output:</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test_first_ten_digit_prime (__main__.test_hw2) ... ok
+test_is_prime (__main__.test_hw2) ... ok
+test_iterable (__main__.test_hw2) ... ok
+test_num_expansion (__main__.test_hw2) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.032s
+
+OK
+&lt;unittest.main.TestProgram at 0x7f0ab630f590&gt;
+</code></pre></div></div>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="zhoux811/my_fastai"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/my_fastai/2021/09/17/hw2.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/my_fastai/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/my_fastai/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/my_fastai/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/my_fastai/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/my_fastai/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
