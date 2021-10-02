@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "plotly test",
-            "content": "HW2. Number theory and a Google recruitment puzzle . hujkladgsfhjklgsdfahjklgdf . import pandas as pd import plotly.express as px inc = pd.read_csv(&#39;malaria_inc.csv&#39;) inc.rename(columns={inc.columns[3]: &quot;inc&quot;}, errors=&#39;raise&#39;, inplace=True) inc = inc.sort_values(by=[&#39;Year&#39;, &#39;inc&#39;]) inc[&#39;Year&#39;] = inc[&#39;Year&#39;].astype(str) fig = px.bar( inc, y=&#39;Entity&#39;, x=&#39;inc&#39;, orientation=&#39;h&#39;, color=&#39;Year&#39;, color_continuous_scale=px.colors.sequential.PuBu, ) fig.show() .",
+            "content": "HW plotlyyyyyyyyyyyyyyyyyyyyy . hujkladgsfhjklgsdfahjklgdf . import pandas as pd import plotly.express as px inc = pd.read_csv(&#39;malaria_inc.csv&#39;) inc.rename(columns={inc.columns[3]: &quot;inc&quot;}, errors=&#39;raise&#39;, inplace=True) inc = inc.sort_values(by=[&#39;Year&#39;, &#39;inc&#39;]) inc[&#39;Year&#39;] = inc[&#39;Year&#39;].astype(str) fig = px.bar( inc, y=&#39;Entity&#39;, x=&#39;inc&#39;, orientation=&#39;h&#39;, color=&#39;Year&#39;, color_continuous_scale=px.colors.sequential.PuBu, ) fig.show() .",
             "url": "https://zhoux811.github.io/my_fastai/plotly/2021/10/01/hw.html",
             "relUrl": "/plotly/2021/10/01/hw.html",
             "date": " • Oct 1, 2021"
